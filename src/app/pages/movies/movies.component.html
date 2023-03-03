@@ -1,0 +1,13 @@
+<app-jumbotron [title]="title" [description]="description" [content]="content" [buttonText]="buttonText" [link]="link"></app-jumbotron>
+
+<div class="row">
+  <div *ngFor="let movie of movies; index as i" class="col-md-3">
+    <div class="card equal-height-card">
+      <img class="card-img-top equal-height-img" [src]="movie.image">
+      <div class="card-body">
+        <h5 class="card-title">{{ movie.title }}</h5>
+        <p class="card-text">{{ movie.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.equal-size-img {
+  min-width: 100%;
+  min-height: 270px;
+  max-height: 270px;
+}
+
+.horizontal-margin {
+  margin-left: -15px;
+  margin-right: -15px;
+}

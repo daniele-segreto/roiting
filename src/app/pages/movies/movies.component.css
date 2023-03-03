@@ -1,0 +1,14 @@
+.equal-height-card {
+  height: 760px; /* impostare l'altezza desiderata */
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-top: 10px;
+}
+
+.equal-height-img {
+  height: 600px; /* impostare l'altezza desiderata */
+  display: flex;
+  align-items: center;
+  border: none;
+}

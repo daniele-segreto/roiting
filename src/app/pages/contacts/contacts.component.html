@@ -1,0 +1,20 @@
+<app-jumbotron [title]="title" [description]="description" [content]="content" [buttonText]="buttonText" [link]="link"></app-jumbotron>
+
+<div class="container mt-3">
+  <h2>Contatti</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="form-group">
+      <label for="name">Nome:</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Messaggio:</label>
+      <textarea class="form-control" id="message" name="message" [(ngModel)]="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Invia</button>
+  </form>
+</div>
